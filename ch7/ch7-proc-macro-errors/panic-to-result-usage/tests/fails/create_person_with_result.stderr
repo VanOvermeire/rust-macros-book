@@ -1,0 +1,5 @@
+error: this macro can only be applied to a function that does not yet return a Result. Signature: Result < Person, String >
+  --> tests/fails/create_person_with_result.rs:10:57
+   |
+10 | fn create_person_with_result(name: String, age: u32) -> Result<Person, String> {
+   |                                                         ^^^^^^^^^^^^^^^^^^^^^^

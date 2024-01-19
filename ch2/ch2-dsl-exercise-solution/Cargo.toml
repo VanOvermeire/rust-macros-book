@@ -1,0 +1,9 @@
+[package]
+name = "ch2-dsl-exercise-solution"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lints.rust]
+dead_code = "allow"

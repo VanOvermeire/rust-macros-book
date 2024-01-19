@@ -1,0 +1,5 @@
+error: expected equals sign after path
+ --> tests/fails/missing_equals.rs:3:14
+  |
+3 | config!(path "stuff");
+  |              ^^^^^^^

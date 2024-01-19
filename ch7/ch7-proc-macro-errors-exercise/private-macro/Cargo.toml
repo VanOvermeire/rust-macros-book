@@ -1,0 +1,12 @@
+[package]
+name = "proc-macro-errors-exercise"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proc-macro-error = "1.0.4"
+quote = "1.0.33"
+syn = "2.0.39"
+
+[lib]
+proc-macro = true

@@ -1,0 +1,20 @@
+warning: type `__notDefaultAssertion` should have an upper camel case name
+ --> tests/fails/no_default.rs:8:5
+  |
+8 |     not: DoesNotImplementDefault
+  |     ^^^ help: convert the identifier to upper camel case: `NotDefaultAssertion`
+  |
+  = note: `#[warn(non_camel_case_types)]` on by default
+
+error[E0277]: the trait bound `DoesNotImplementDefault: Default` is not satisfied
+ --> tests/fails/no_default.rs:8:10
+  |
+8 |     not: DoesNotImplementDefault
+  |          ^^^^^^^^^^^^^^^^^^^^^^^ the trait `Default` is not implemented for `DoesNotImplementDefault`
+  |
+  = help: see issue #48214
+help: consider annotating `DoesNotImplementDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct DoesNotImplementDefault;
+  |

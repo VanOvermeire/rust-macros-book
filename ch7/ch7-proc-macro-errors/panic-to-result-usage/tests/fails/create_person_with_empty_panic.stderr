@@ -1,0 +1,9 @@
+error: panic needs a message!
+
+         = help: try to add a message: panic!("Example".to_string())
+         = note: we will add the message to Result's Err
+
+  --> tests/fails/create_person_with_empty_panic.rs:12:9
+   |
+12 |         panic!();
+   |         ^^^^^^^^^

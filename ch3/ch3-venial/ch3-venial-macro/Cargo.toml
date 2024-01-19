@@ -1,0 +1,11 @@
+[package]
+name = "venial-macro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+venial = "0.5.0"
+quote = "1.0.33"
+
+[lib]
+proc-macro = true

@@ -1,0 +1,7 @@
+[package]
+name = "hello-world-name-to-output"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hello-world-name-to-output-macro = { path = "./ch3-implemented-macro" }

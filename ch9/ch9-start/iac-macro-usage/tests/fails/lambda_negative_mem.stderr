@@ -1,0 +1,5 @@
+error: memory needs a positive value <= 10240
+ --> tests/fails/lambda_negative_mem.rs:5:25
+  |
+5 |         lambda name mem -10
+  |                         ^

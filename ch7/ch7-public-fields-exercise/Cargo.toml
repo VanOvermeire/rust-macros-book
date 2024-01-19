@@ -1,0 +1,7 @@
+[package]
+name = "ch7-public-fields-exercise"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+make-public-macro = { path = "./make-public-macro" }

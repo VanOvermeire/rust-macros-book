@@ -1,0 +1,5 @@
+error: config macro only allows for 'path' input
+ --> tests/fails/unknown_config_keyword.rs:3:9
+  |
+3 | config!(unknown = stuff);
+  |         ^^^^^^^

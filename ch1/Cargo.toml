@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "ch1-first-program",
+    "ch1-generic-functions"
+]

@@ -1,0 +1,5 @@
+error: only 'bucket' and 'lambda' resources are supported
+ --> tests/fails/lambda_typo.rs:5:9
+  |
+5 |         lamba name
+  |         ^^^^^

@@ -1,0 +1,7 @@
+[package]
+name = "config-macro-usage"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+config-macro = { path = "../config-macro", features = ["struct", "from"] }

@@ -1,0 +1,10 @@
+[package]
+name = "builder-usage"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+builder-macro = { path = "../builder-macro" }
+
+[dev-dependencies]
+trybuild = "1.0.85"

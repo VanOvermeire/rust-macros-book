@@ -1,0 +1,5 @@
+error: name property needs a value
+ --> tests/fails/no_lambda_name.rs:5:23
+  |
+5 |         lambda (name =)
+  |                       ^

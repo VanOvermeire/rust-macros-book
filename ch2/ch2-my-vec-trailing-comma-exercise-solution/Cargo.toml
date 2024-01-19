@@ -1,0 +1,6 @@
+[package]
+name = "ch2-my-vec-trailing-comma-exercise-solution"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

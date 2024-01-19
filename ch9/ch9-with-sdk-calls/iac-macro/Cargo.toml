@@ -1,0 +1,16 @@
+[package]
+name = "iac-macro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-config = "1.1.1"
+aws-sdk-s3 = "1.11.0"
+aws-sdk-lambda = "1.9.0"
+quote = "1.0.33"
+syn = { version = "2.0.39", features = ["extra-traits"]}
+proc-macro2 = "1.0.69"
+tokio = { version = "1.26.0", features = ["rt", "rt-multi-thread"] }
+
+[lib]
+proc-macro = true

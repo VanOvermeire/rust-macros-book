@@ -1,0 +1,5 @@
+error: unknown property passed to lambda
+ --> tests/fails/lambda_fake_property.rs:5:28
+  |
+5 |         lambda name mem 10 fake 15
+  |                            ^^^^

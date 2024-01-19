@@ -1,0 +1,7 @@
+[package]
+name = "make-public-structfield-parse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+make-public-structfield-parse-macro = { path = "./make-public-macro" }

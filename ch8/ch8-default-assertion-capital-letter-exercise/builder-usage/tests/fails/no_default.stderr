@@ -1,0 +1,12 @@
+error[E0277]: the trait bound `DoesNotImplementDefault: Default` is not satisfied
+ --> tests/fails/no_default.rs:8:10
+  |
+8 |     not: DoesNotImplementDefault
+  |          ^^^^^^^^^^^^^^^^^^^^^^^ the trait `Default` is not implemented for `DoesNotImplementDefault`
+  |
+  = help: see issue #48214
+help: consider annotating `DoesNotImplementDefault` with `#[derive(Default)]`
+  |
+3 + #[derive(Default)]
+4 | struct DoesNotImplementDefault;
+  |

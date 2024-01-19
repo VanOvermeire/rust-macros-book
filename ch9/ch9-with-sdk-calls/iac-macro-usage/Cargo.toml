@@ -1,0 +1,7 @@
+[package]
+name = "iac-macro-usage"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iac-macro = { path = "../iac-macro" }

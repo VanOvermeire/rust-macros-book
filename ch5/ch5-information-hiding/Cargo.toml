@@ -1,0 +1,7 @@
+[package]
+name = "ch5-private"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+private-macro = { path = "./private-macro" }

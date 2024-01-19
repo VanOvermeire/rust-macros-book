@@ -1,0 +1,5 @@
+error: prop name and value should be separated by an equals sign
+ --> tests/fails/lambda_colon_instead_of_equals.rs:5:22
+  |
+5 |         lambda (name :)
+  |                      ^

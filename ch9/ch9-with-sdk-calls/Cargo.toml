@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "iac-macro-usage",
+    "iac-macro"
+]

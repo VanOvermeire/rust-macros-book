@@ -1,0 +1,7 @@
+error: proc-macro derive panicked
+ --> tests/fails/build_enum.rs:3:10
+  |
+3 | #[derive(Builder)]
+  |          ^^^^^^^
+  |
+  = help: message: not implemented: only implemented for structs

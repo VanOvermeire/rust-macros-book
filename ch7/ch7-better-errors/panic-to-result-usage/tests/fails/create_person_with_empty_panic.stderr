@@ -1,0 +1,5 @@
+error: please make sure every panic in your function has a message
+  --> tests/fails/create_person_with_empty_panic.rs:12:9
+   |
+12 |         panic!();
+   |         ^^^^^

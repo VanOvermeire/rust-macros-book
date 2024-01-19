@@ -1,0 +1,5 @@
+error: lambda needs a name
+ --> tests/fails/bucket_and_no_lambda_name.rs:5:23
+  |
+5 |         bucket unique lambda
+  |                       ^^^^^^

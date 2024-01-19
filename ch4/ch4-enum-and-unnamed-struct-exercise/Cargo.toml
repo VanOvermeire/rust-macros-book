@@ -1,0 +1,7 @@
+[package]
+name = "make-public-enum-and-unnamed-struct"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+make-public-macro-enum-and-unnamed-struct = { path = "./make-public-macro" }

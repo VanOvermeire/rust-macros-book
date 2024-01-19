@@ -1,0 +1,5 @@
+error: bucket needs a name
+ --> tests/fails/no_bucket_name.rs:5:9
+  |
+5 |         bucket
+  |         ^^^^^^

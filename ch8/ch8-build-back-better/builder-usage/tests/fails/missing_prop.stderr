@@ -1,0 +1,41 @@
+warning: type `roots_ofOfGleipnirBuilder` should have an upper camel case name
+ --> tests/fails/missing_prop.rs:5:5
+  |
+5 |     roots_of: String,
+  |     ^^^^^^^^ help: convert the identifier to upper camel case: `RootsOfOfGleipnirBuilder`
+  |
+  = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: type `breath_of_a_fishOfGleipnirBuilder` should have an upper camel case name
+ --> tests/fails/missing_prop.rs:6:5
+  |
+6 |     breath_of_a_fish: u8,
+  |     ^^^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `BreathOfAFishOfGleipnirBuilder`
+
+warning: type `anything_elseOfGleipnirBuilder` should have an upper camel case name
+ --> tests/fails/missing_prop.rs:7:5
+  |
+7 |     anything_else: bool,
+  |     ^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `AnythingElseOfGleipnirBuilder`
+
+error[E0599]: no method named `build` found for struct `GleipnirBuilder<anything_elseOfGleipnirBuilder>` in the current scope
+  --> tests/fails/missing_prop.rs:15:10
+   |
+3  |   #[derive(Builder)]
+   |            ------- method `build` not found for this struct
+...
+12 |       Gleipnir::builder()
+   |       -------------------
+   |       |
+   |  _____method `build` is available on `GleipnirBuilder<roots_ofOfGleipnirBuilder>`
+   | |
+13 | |         .roots_of("mountains".to_string())
+   | |          --------------------------------- method `build` is available on `GleipnirBuilder<breath_of_a_fishOfGleipnirBuilder>`
+14 | |         .breath_of_a_fish(1)
+15 | |         .build();
+   | |         -^^^^^ method not found in `GleipnirBuilder<anything_elseOfGleipnirBuilder>`
+   | |_________|
+   |
+   |
+   = note: the method was found for
+           - `GleipnirBuilder<FinalBuilder>`

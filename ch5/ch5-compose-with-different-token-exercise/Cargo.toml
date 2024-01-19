@@ -1,0 +1,7 @@
+[package]
+name = "function-like-compose-with-different-token-exercise"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+function-like-compose-with-different-token-exercise-macro = { path = "ch5-function-like-compose-macro" }

@@ -1,0 +1,7 @@
+[package]
+name = "hello-world-fill-in-blanks"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hello-world-fill-in-blanks-macro = { path = "./ch3-implemented-macro" }

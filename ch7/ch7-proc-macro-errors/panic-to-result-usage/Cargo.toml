@@ -1,0 +1,10 @@
+[package]
+name = "panic-to-result-usage"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+panic-to-result-macro = { path = "../panic-to-result-macro" }
+
+[dev-dependencies]
+trybuild = "1.0.85"
