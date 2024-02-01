@@ -1,14 +1,12 @@
-# Rust Power Tools
+# Write Powerful Rust Macros
 
 ## Overview
 
-This is the code for Manning's _Rust Power Tools_ book. 
+This is the code for Manning's _Write Powerful Rust Macros_ book. 
 
 The code is organized by chapter. Exercise solutions are _not_ located in a separate appendix directory, instead they sit next to the example code for the chapter they appeared in, and always end in `-exercise`.
 Every project besides the exercise solutions represents either a complete example, or (since many chapters are based around a single example) show stages in the development of that example.
 Each one contains a README file that gives some idea what part of the chapter it is related to.
-
-// TODO add readmes to every project!
 
 ## Util
 
