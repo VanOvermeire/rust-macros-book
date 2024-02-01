@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the code for Manning's _Write Powerful Rust Macros_ book. 
+This is the code for Manning's _Write Powerful Rust Macros_ [book](http://mng.bz/e1lv). 
 
 The code is organized by chapter. Exercise solutions are _not_ located in a separate appendix directory, instead they sit next to the example code for the chapter they appeared in, and always end in `-exercise`.
 Every project besides the exercise solutions represents either a complete example, or (since many chapters are based around a single example) show stages in the development of that example.
