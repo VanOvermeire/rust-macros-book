@@ -71,14 +71,14 @@ impl Parse for KeyValue {
                 "prop name and value should be separated by an equals sign",
             ))?;
 
-        let value = if key == "name".to_string() {
+        let value = if key == "name" {
             input.parse()
                 .map(|v: Ident| v.to_string())
                 .map_err(|_| syn::Error::new(
                     input.span(),
                     "name property needs a value",
                 ))
-        } else if key == "mem".to_string() || key == "time".to_string() {
+        } else if key == "mem" || key == "time" {
             input.parse()
                 .map(|v: LitInt| v.to_string())
                 .map_err(|_| {
@@ -112,7 +112,7 @@ impl Parse for Lambda {
 
         let kvs = Punctuated::<KeyValue, Token!(,)>::parse_terminated(&content)?;
         kvs.into_iter().for_each(|kv| {
-            if kv.key == "name".to_string() {
+            if kv.key == "name" {
                 lambda_name = Some(kv.value);
             } else if kv.key == "mem" {
                 lambda_memory = Some(kv.value.parse().unwrap()); // should actually check like before

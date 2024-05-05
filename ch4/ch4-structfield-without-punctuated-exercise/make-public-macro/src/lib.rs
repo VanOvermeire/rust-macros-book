@@ -1,6 +1,6 @@
 use proc_macro::TokenStream;
 use quote::{quote, ToTokens};
-use syn::{DeriveInput, Ident, parse_macro_input, Visibility};
+use syn::{DeriveInput, Ident, parse_macro_input, Type, Visibility};
 use syn::Data::Struct;
 use syn::DataStruct;
 use syn::Fields::Named;
@@ -10,7 +10,7 @@ use syn::token::{Colon};
 
 struct StructField {
     name: Ident,
-    ty: Ident,
+    ty: Type,
 }
 
 impl ToTokens for StructField {
@@ -26,7 +26,7 @@ impl Parse for StructField {
         let _vis: Result<Visibility, _> = input.parse();
         let name: Ident = input.parse().unwrap();
         let _colon: Result<Colon, _> = input.parse();
-        let ty: Ident = input.parse().unwrap();
+        let ty: Type = input.parse().unwrap();
 
         Ok(StructField {
             name,

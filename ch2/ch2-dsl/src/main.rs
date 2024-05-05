@@ -50,7 +50,7 @@ fn main() {
     exchange!(Take 10 from the_rich);
     exchange!(Give 30 from the_rich to the_poor);
 
-    println!("Poor: {:?}, rich: {:?}", the_poor, the_rich);
+    println!("Poor: {the_poor:?}, rich: {the_rich:?}");
 
     give_money_to_the_poor!(Give 0);
 }

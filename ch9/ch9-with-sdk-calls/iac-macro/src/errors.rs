@@ -48,6 +48,7 @@ impl Display for IacError {
 }
 
 macro_rules! generate_from_error {
+    // path would also work for $mine
     ($mine:expr, $aws:ty) => {
         impl From<SdkError<$aws>> for IacError {
             fn from(value: SdkError<$aws>) -> Self {
