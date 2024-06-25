@@ -18,3 +18,9 @@ Usage:
 ```bash
 ./create_setup.sh name 2
 ```
+
+## Errata
+
+**Section 1.3.2 (page 7)**
+
+`#[derive(Clone)}` should be `#[derive(Clone)]`
