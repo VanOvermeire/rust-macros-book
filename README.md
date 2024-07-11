@@ -24,3 +24,7 @@ Usage:
 **Section 1.3.2 (page 7)**
 
 `#[derive(Clone)}` should be `#[derive(Clone)]`
+
+**Section 2.1.4 (page 15)**
+
+"Nonemtpy" in the title should be "nonempty"
