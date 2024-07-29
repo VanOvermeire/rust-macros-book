@@ -28,3 +28,11 @@ Usage:
 **Section 2.1.4 (page 15)**
 
 "Nonemtpy" in the title should be "nonempty"
+
+**Section 2.4 (page 39)**
+
+"trailing comments" should be "trailing commas"
+
+**Appendix (page 260)**
+
+"trailing comments" should be "trailing commas"
