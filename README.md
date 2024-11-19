@@ -21,6 +21,10 @@ Usage:
 
 ## Errata
 
+**Section 1.2 (page 4)**
+
+C++, not C, has templates
+
 **Section 1.3.2 (page 7)**
 
 `#[derive(Clone)}` should be `#[derive(Clone)]`
