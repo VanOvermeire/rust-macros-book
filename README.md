@@ -21,6 +21,8 @@ Usage:
 
 ## Errata
 
+Thanks again to the readers who reported these.
+
 **Section 1.2 (page 4)**
 
 C++, not C, has templates
@@ -31,12 +33,16 @@ C++, not C, has templates
 
 **Section 2.1.4 (page 15)**
 
-"Nonemtpy" in the title should be "nonempty"
+_Nonemtpy_ in the title should be _nonempty_
+
+**Section 2.1.4 (page 18)**
+
+`$[($x:expr),+] => (:` should not end with `:`
 
 **Section 2.4 (page 39)**
 
-"trailing comments" should be "trailing commas"
+_trailing comments_ should be _trailing commas_
 
 **Appendix (page 260)**
 
-"trailing comments" should be "trailing commas"
+_trailing comments_ should be _trailing commas_
