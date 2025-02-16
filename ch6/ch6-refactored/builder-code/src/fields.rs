@@ -4,7 +4,7 @@ use syn::__private::TokenStream2;
 use syn::punctuated::{Punctuated};
 use syn::token::Comma;
 
-pub fn original_struct_setters(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
+pub(crate) fn original_struct_setters(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
     fields.iter().map(|f| {
         let field_name = &f.ident;
         let field_name_as_string = field_name
@@ -49,7 +49,7 @@ pub fn original_struct_setters(fields: &Punctuated<Field, Comma>) -> impl Iterat
 //     false
 // }
 
-pub fn builder_methods(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
+pub(crate) fn builder_methods(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
     fields.iter().map(|f| {
         let (field_name, field_type) = get_name_and_type(f);
         quote! {
@@ -61,14 +61,14 @@ pub fn builder_methods(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item 
     })
 }
 
-pub fn builder_init_values(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
+pub(crate) fn builder_init_values(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
     fields.iter().map(|f| {
         let field_name = &f.ident;
         quote! { #field_name: None }
     })
 }
 
-pub fn builder_field_definitions(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
+pub(crate) fn builder_field_definitions(fields: &Punctuated<Field, Comma>) -> impl Iterator<Item = TokenStream2> + '_ {
     fields.iter().map(|f| {
         let (field_name, field_type) = get_name_and_type(f);
         quote! { #field_name: Option<#field_type> }

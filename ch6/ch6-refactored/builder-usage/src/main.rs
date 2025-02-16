@@ -65,6 +65,6 @@ mod tests {
 
         assert_eq!(gleipnir.roots_of, "mountains".to_string());
         assert_eq!(gleipnir.breath_of_a_fish, 1);
-        assert_eq!(gleipnir.other_necessities.len(), 3)
+        assert_eq!(gleipnir.other_necessities.len(), 3);
     }
 }

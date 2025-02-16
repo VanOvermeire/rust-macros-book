@@ -43,6 +43,46 @@ _Nonemtpy_ in the title should be _nonempty_
 
 _trailing comments_ should be _trailing commas_
 
+**Section 6.4.3 (page 114)**
+
+Minor: pub functions could be pub(crate).
+
+**Section 6.4.5 (page 120)**
+
+`assert_eq!(gleipnir.other_necessities.len(), 3)` should preferably be `assert_eq!(gleipnir.other_necessities.len(), 3);`
+
+**Section 7.5 (page 138)**
+
+`use quote::{ToTokens};` should be `use quote::ToTokens;`
+
+**Section 7.7 (page 143)**
+
+`ast.to_token_stream()` should be `ast.to_token_stream().into()`. The `into()` seems to have disappeared in the proofs, it was present in the code.
+
+**Section 8.1 (page 164)**
+
+The tests are added to `main.rs` of `builder-usage` (not really a bug, but it's unclear where the given tests should be placed).
+
+**Section 10.1.2 (page 237)**
+
+The `Ok` and `?` are redundant. So this:
+
+```
+Ok(serde_yaml::from_reader(file)
+        .map_err(|e| {
+            syn::Error::new(Span::call_site(), e.to_string())
+        })?)
+```
+
+Can be changed to
+
+```
+serde_yaml::from_reader(file)
+        .map_err(|e| {
+            syn::Error::new(Span::call_site(), e.to_string())
+        })
+```
+
 **Appendix (page 260)**
 
 _trailing comments_ should be _trailing commas_

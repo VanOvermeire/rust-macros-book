@@ -32,10 +32,10 @@ fn find_yaml_values(input: &ConfigInput) -> Result<HashMap<String, String>, syn:
                 format!("could not find config with path {}", &file_name),
             )
         })?;
-    Ok(serde_yaml::from_reader(file)
+    serde_yaml::from_reader(file)
         .map_err(|e| {
             syn::Error::new(Span::call_site(), e.to_string())
-        })?)
+        })
 }
 
 /// This function-like macro will generate a struct called `Config`
