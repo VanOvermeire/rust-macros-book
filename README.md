@@ -43,9 +43,22 @@ _Nonemtpy_ in the title should be _nonempty_
 
 _trailing comments_ should be _trailing commas_
 
+**Section 5.1 (page 82, 84, and 87)**
+
+In this chapter `quote::__private::TokenStream` should be `proc_macro2::TokenStream`.
+
+**Section 5.1 (page 84)**
+
+For the 'ugly return type' a reference to what is currently pages 264–265 would be useful.
+
+_Now focus on the code inside map._ would be clearer with a reference to the listing: _Now focus on the code inside map in listing 5.4._
+
+For clarity, replace _So we need an identifier._ with the following:
+_The simplest way to solve the issue is to use `TokenStream::from_str`. This method will try to turn your string into a `TokenStream` that we can use as an identifier. The other approach is to construct an identifier ourselves._
+
 **Section 6.4.3 (page 114)**
 
-Minor: pub functions could be pub(crate).
+Minor: `pub` function could be `pub(crate)`.
 
 **Section 6.4.5 (page 120)**
 
