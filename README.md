@@ -72,6 +72,10 @@ Minor: `pub` function could be `pub(crate)`.
 
 `ast.to_token_stream()` should be `ast.to_token_stream().into()`. The `into()` seems to have disappeared in the proofs, it was present in the code.
 
+**Section 7.9.2(e.g. p. 155)**
+
+`proc_macro_error` uses syn version 1. There's a `proc-macro-error-2` (fork of the original project) that uses syn version 2.
+
 **Section 8.1 (page 164)**
 
 The tests are added to `main.rs` of `builder-usage` (not really a bug, but it's unclear where the given tests should be placed).
@@ -95,6 +99,10 @@ serde_yaml::from_reader(file)
             syn::Error::new(Span::call_site(), e.to_string())
         })
 ```
+
+**Section 10.7 (page 258)**
+
+Besides SO and Reddit, the official [Rust forums](https://users.rust-lang.org/) should also be mentioned. 
 
 **Appendix (page 260)**
 
