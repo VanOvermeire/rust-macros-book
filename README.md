@@ -39,6 +39,10 @@ _Nonemtpy_ in the title should be _nonempty_
 
 `$[($x:expr),+] => (:` should not end with `:`
 
+**Section 2.2.4 (page 30)**
+
+`println!("Poor: {the.poor?}, rich: {the.rich?}");` should be `println!(“Poor: {the_poor:?}, rich: {the_rich:?}”);`
+
 **Section 2.4 (page 39)**
 
 _trailing comments_ should be _trailing commas_
