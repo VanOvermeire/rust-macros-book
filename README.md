@@ -21,7 +21,7 @@ Usage:
 
 ## Errata
 
-Thanks again to the readers who reported these.
+Thanks again to the readers who reported these!
 
 **Section 1.2 (page 4)**
 
@@ -47,6 +47,10 @@ _Nonemtpy_ in the title should be _nonempty_
 
 _trailing comments_ should be _trailing commas_
 
+**Section 5.1 (page 81)**
+
+_it makes perfect sense for the input of a function-like macro to replace the output_ should be _it makes perfect sense for the output of a function-like macro to replace the input_
+
 **Section 5.1 (page 82, 84, and 87)**
 
 In this chapter `quote::__private::TokenStream` should be `proc_macro2::TokenStream`.
@@ -59,6 +63,10 @@ _Now focus on the code inside map._ would be clearer with a reference to the lis
 
 For clarity, replace _So we need an identifier._ with the following:
 _The simplest way to solve the issue is to use `TokenStream::from_str`. This method will try to turn your string into a `TokenStream` that we can use as an identifier. The other approach is to construct an identifier ourselves._
+
+**Section 5.3 (page 90)**
+
+`composed#E` should be `composed(5)`
 
 **Section 6.4.3 (page 114)**
 
