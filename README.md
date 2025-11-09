@@ -82,7 +82,13 @@ Minor: `pub` function could be `pub(crate)`.
 
 **Section 7.7 (page 143)**
 
+`let mut ast: ItemFn = syn::parse2(item).unwrap();` in the listing should be `let mut ast: ItemFn = syn::parse(item).unwrap();`.
+
 `ast.to_token_stream()` should be `ast.to_token_stream().into()`. The `into()` seems to have disappeared in the proofs, it was present in the code.
+
+** Section 7.9 (page 149)**
+
+`-> TokenStream` should be `-> ReturnType`, `match ast.sig.output` should be `let output = match ast.sig.ouput`, `Ok(quote! {...} )` should be `quote! {...}`, and `syn::parse2(output).unwrap()` should be the last line of the function. All of this was correct in the code for the book, but something went wrong in the text.
 
 **Section 7.9.2(e.g. p. 155)**
 
